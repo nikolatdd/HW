@@ -1,0 +1,140 @@
+# Задача 1
+# numbers = []
+# x = int(input('Write in positive numbers: '))
+
+# while x != 0:
+# 	numbers.append(x)
+# 	x = int(input('Write in positive numbers: '))
+# sorted_numbers = sorted(numbers)
+
+# for num in sorted_numbers:
+# 	print(num)
+
+# Задача 2
+
+#numbers = list()
+# x = int(input('Write down more than 4 positive numbers for the list (0 to end): '))
+# while x != 0:
+#     numbers.append(x)
+#     x = int(input('Write down more than 4 positive numbers for the list (0 to end): '))
+# n = 2
+# print('The n amount of numbers in list (0 to n): ')
+# print(numbers[ : n])
+# numbers_copy = numbers[:]
+# for num in range(n):
+#     max_value = max(numbers_copy)
+#     max_index = numbers_copy.index(max_value)
+#     numbers_copy.pop(max_index)
+# for num in range(n):
+#     lowest_value = min(numbers_copy)
+#     lowest_index = numbers_copy.index(lowest_value)
+#     numbers_copy.pop(lowest_index)
+# print('All the listed numbers withouth the n amount of lowest and highest numbers popped: {}'.format(numbers_copy))
+
+# Задача 3
+
+x = list()
+# str_list = list()
+# while x != '':
+#     x = str(input('Type in some words: '))
+#     str_list.append(x)
+# str_list.pop()
+# temp_list = []
+# for i in str_list:
+#     if i not in temp_list:
+#         temp_list.append(i)
+# str_list = temp_list
+
+# for i in range(len(str_list)):
+#     print(str_list[i])
+
+# Задача 4
+
+numbers = list()
+# x = 0
+
+# while x != '':
+#     x = input('Type in some numbers: ')
+#     if type(x).isdigit:
+#         numbers.append(x)        
+#     else:
+#         print('Only integers')
+#         break
+
+# numbers.pop()
+# sorted_numbers = sorted(numbers)
+# count=0
+# for i in sorted_numbers:
+#     i = int(i)
+#     if i<0:
+#         count+=1
+# print(f'Count negative: {count}')
+
+# for i in range(len(sorted_numbers)):
+#     print(sorted_numbers[i])
+# x = list()
+# str_list = list()
+# while x != '':
+#     x = str(input('Type in some words: '))
+#     str_list.append(x)
+# str_list.pop()
+# temp_list = []
+# for i in str_list:
+#     if i not in temp_list:
+#         temp_list.append(i)
+# str_list = temp_list
+
+# for i in range(len(str_list)):
+#     print(str_list[i])
+
+# Задача 5
+
+#from random import randint, random
+
+# lottery = list()
+# for i in range(6):
+#     x = randint(1,49)
+#     lottery.append(x)
+# lottery = sorted(lottery)
+# for i in range(6):
+#     print(lottery[i])
+
+# Задача 6
+
+lst = [1,2,3]
+# all_sublists = list()
+
+# for i in range(len(lst) + 1):
+#     for j in range(i + 1, len(lst) + 1):
+#         all_sublists.append(lst[i:j])
+
+# print('The list at first:        {}'.format(lst))
+# print('All sublists of the list: {}'.format(all_sublists))
+
+# Задача 8
+
+# Input = [3, 2, 3, 4, 2, 2, 4]
+# Output = list()
+# temp = list()
+# last = -1
+ 
+# for i in Input:
+#     if i - last == 1:
+#         temp.append(last)
+#     else:
+#         temp.append(last)
+#         Output.append(temp)
+#         temp = []
+#     last = i
+ 
+# final_l = []
+# most = 0
+ 
+# for i in Output:
+#     if len(i)> most:
+#         most = len(i)
+#         final_l = i
+# print("Initial List is")
+# print(Input)
+# print("Longest Consecutive list is :")
+# print(final_l)
