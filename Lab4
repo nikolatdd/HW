@@ -1,0 +1,97 @@
+Задача 1
+x = 10
+y = 9
+print(x,y)
+if x > y:
+    temp = x
+    x = y
+    y = temp
+print(x,y)
+
+Задача 2
+x=22
+y=4
+if x/y>0:
+    print('+')
+elif x/y==0:
+    print('+')
+else: 
+    print('-')
+    
+Задача 3
+x=13
+y=12
+z=12
+if x>y and x>z:
+    print(f'x has biggest value: {x}')
+elif y>x and y>z:
+    print(f'y has biggest value: {y}')
+elif z>x and z>y:
+    print(f'z has biggest value: {z}')
+else: 
+    print('x,y and z cant be equal')
+    
+Задача 4
+x = input('Type in a number inbetween 0-9: ')
+if x == '0':
+    print('Нула')
+elif x == '1':
+    print('Едно')
+elif x == '2':
+    print('Две')
+elif x == '3':
+    print('Три')
+elif x == '4':
+    print('Четири')
+elif x == '5':
+    print('Пет')
+elif x == '6':
+    print('Шест')
+elif x == '7':
+    print('Седем')
+elif x == '8':
+    print('Осем')
+elif x == '9':
+    print('Девет')
+else:
+     print('Not a number inbewtween 0-9')
+
+Задача 5
+import math
+x1 = x2 = x = 0
+a = input('Value for a: ')
+b = input('Value for b: ')
+c = input('Value for c: ')
+a = float(a)
+b = float(b)
+c = float(c)
+D = b**2 - 4*a*c
+print(D)
+if D == 0:
+     x = -(b)/2*a
+     print(f'x: {x}')
+elif D > 0:
+    x1 = (-(b)- math.sqrt(D))/2*a
+    x2 = (-(b)+ math.sqrt(D))/2*a
+    print('x1: {} and x2: {}'.format(x1,x2))
+elif D<0:
+    x = x1 = x2 = 0
+    print('No answer')
+else:
+    print("Invalid")
+
+Задача 6
+...
+
+Задача 7
+points = input()
+points = int(points)
+if points <= 3:
+    points *=10
+elif points <= 6:
+    points *=100
+elif points <= 9:
+    points *=1000
+else: 
+    print('Error, no bonus points')
+print(f'Points: {points}')
