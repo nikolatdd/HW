@@ -1,0 +1,42 @@
+Задача 1
+numbers = []
+def evenGenerator(n):
+    for i in range(n+1):
+        if i % 2 == 0:
+            yield i
+for gnum in evenGenerator(10):
+    numbers.append(str(gnum))
+print(", ".join(numbers))
+
+Задача 2
+numbers = []
+def evenGenerator(n):
+    for i in range(n+1):
+        if i % 2 == 1:
+            yield i
+for gnum in evenGenerator(10):
+    numbers.append(str(gnum))
+print(", ".join(numbers))
+
+Задача 3
+numbers = []
+def evenGenerator(n):
+    for i in range(2, n+1):
+        for j in range(2, i):
+            if (i % j) == 0:            
+                break
+        else:
+            yield i
+for gnum in evenGenerator(10):
+    numbers.append(str(gnum))
+print(", ".join(numbers))
+
+Задача 4
+numbers = []
+def evenGenerator(n):
+    for i in range(n+1):
+        if i % 2 == 1:
+            yield i
+for gnum in evenGenerator(10):
+    numbers.append(str(gnum))
+print(", ".join(numbers))
