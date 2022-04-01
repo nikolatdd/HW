@@ -1,0 +1,65 @@
+Задача 4
+x = 3
+y = 10
+result = x * y
+print(f'3+10={result}')
+
+Задача 5
+x = 245.54
+h = 13.66
+S = x * h
+print(S)
+
+Задача 6
+first_name = ""
+last_name = ""
+age = 0
+gender = {'м', 'ж'}
+for n in range(1,999):
+    unique_num = 27560000 + n
+
+print(unique_num)
+
+Задача 7
+x = 10
+y = 5
+print(f"Before: {x,y}")
+temp = x
+x = y
+y = temp
+print(f"After:  {x,y}")
+
+Задача 8
+a = 0
+a = input("Value for a: ")
+b = 0
+b = input("Value for b: ")
+ha = 0
+ha = input("Value for h(a): ")
+S = int(ha) * int(a)
+P = 2*int(a) + 2*int(b)
+print("Area of the comparator: {}".format(S))
+print("Perimeter of the comparator: {}".format(P))
+
+Задача 9
+import math
+a = input("Value for a: ")
+b = input("Value for b: ")
+c = int(a)**2 + int(b)**2
+c = c**2
+c = math.sqrt(c)
+c = math.floor(c)
+print(f"Value for c: {c}")
+
+Задача 10
+r = 0
+r = input("Radius is equal to: ")
+S = 2 * float(r)
+S*=3.14
+print(f"The area of the circle: {S}")
+
+Задача 11
+num = 0
+num = input("Your number in centimeters: ")
+inches = float(num) * 2.54
+print(f"Your number in inches: {inches}")
