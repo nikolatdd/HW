@@ -1,0 +1,11 @@
+from basic_calculator import *
+a = float(input('Write in a number: '))
+b = float(input('Write in another number: '))
+add(a, b)
+print_res()
+substract(a,b)
+print_res()
+multiplication(a,b)
+print_res()
+division(a,b)
+print_res()
