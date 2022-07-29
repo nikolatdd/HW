@@ -35,8 +35,157 @@ print(", ".join(numbers))
 numbers = []
 def evenGenerator(n):
     for i in range(n+1):
+        if i % 2 == 0:
+            yield i
+for gnum in evenGenerator(10):
+    numbers.append(str(gnum))
+print(", ".join(numbers))
+
+Задаюа 5
+numbers = []
+def оддGenerator(n):
+    for i in range(n+1):
         if i % 2 == 1:
             yield i
 for gnum in evenGenerator(10):
     numbers.append(str(gnum))
 print(", ".join(numbers))
+
+Задача 6
+nums = range(1,10)
+event(", ".join(numbers))
+
+Задача 6
+nums = range(1,10)
+even = list()
+odd = list()
+def distributor(nums):
+    for i in nums:
+        if i % 2 == 0:
+            even.append(i)
+        elif i % 2 == 1:
+            odd.append(i)
+distributor(nums)
+print(odd)
+print(even)
+
+Задача 7
+nums = range(1,10)
+odd = list()
+even = list()
+class clssDistributor:
+    def __itern = list()
+odd = list()
+def distributor(nums):
+    for i in nums:
+        if i % 2 == 0:
+            even.append(i)
+        elif i % 2 == 1:
+            odd.append(i)
+distributor(nums)
+print(odd)
+print(even)
+
+Задача 7
+nums = range(1,10)
+odd = list()
+even = list()
+class clssDistributor:
+    def __iter__(self):
+        return self
+    def __next__(self):
+        for i in nums:    
+            if i % 2 == 0:
+                even.append(i)
+            elif i % 2 == 1:
+                odd.append(i)
+        raise StopIteration
+            
+
+myclass = clssDistributor()
+i_Distributor = iter(myclass)
+for n in i_Distributor:
+    next(i_Distributor)
+print(odd)
+print(even)
+
+Задача 8
+vowels = list()
+consonants= list()
+
+def seperate_letters(str):
+    for ch in str:
+        if not ch.isalpha():
+            continue
+        if ch in "AEIOUaeiou":
+            vowels.append(ch)
+        elif ch not in "AEIOUaeiou":
+            consonants.append(ch)
+
+string = '1aabbcw23egfyu231'
+seperate_letters(string)
+print(vowels) 
+print(consonants)
+
+Задача 9
+vowels = list()
+consonants= list()
+class seperateLetters:
+    def __iter__(self):
+        return self
+    def __next__(self):
+        for ch in string:
+            if not ch.isalpha():
+                continue
+            if ch in 'AEIOUaeiou':
+                vowels.append(ch)
+            else:
+                consonants.append(ch)
+        raise StopIteration
+string = 'abcw23egfyu231'
+obj = seperateLetters()
+sepereateLetters_ = iter(obj)
+
+for i in sepereateLetters_:
+    next(sepereateLetters_)
+
+print(vowels) 
+print(consonants)
+
+Задача 10
+str1 = ['a','b','1','2']
+str2 = ['x','3']
+
+res=str1+str2
+res.sort()
+print(res)
+
+Задаюа 11
+def arithemtic_progression(start, d, n):
+    curr = start
+    for j in range(0,n):
+        yield curr
+        curr+=d
+         
+start = int(input('Starting value: '))
+d = int(input('Step: '))
+n = int(input('Amount of numbers: '))
+print(list(arithemtic_progression(start,d,n)))
+
+Задаюа 12
+
+Задаюа 13
+lists = [['a', 'b', 'c'], [1, 2, 3, 4]]
+def cartesian_product(lists):
+    for x in lists[0]:
+        for y in lists[1]:
+            yield (x,y)
+print(list(cartesian_product(lists)))
+
+Задаюа 14
+from itertools import product
+
+lists = [['a', 'b', 'c'], [1, 2, 3, 4]]
+
+for el in product(*lists):
+    print(el)
