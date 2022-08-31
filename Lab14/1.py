@@ -1,6 +1,9 @@
-lst = [1,2,3]
-
-count_odd = len(list(filter(lambda x: (x%2==1), lst)))
-count_even = len(list(filter(lambda y: (y%2==0), lst))) 
-print(f'count_odd {count_odd}')
-print(f'count_even {count_even}')
+def search_list(pool):
+    pos = 5
+    for i in range(len(pool)):
+        if pool[i] == pos:
+            print(f'Pos {i} matches')
+        else:
+            print('No match')
+pool = [1, 2, 5, 9, 10]
+search_list(pool)
